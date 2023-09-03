@@ -14,3 +14,5 @@ To execute the code for each method, follow these steps:
 After completing the execution of "main.py" for each method, you can visualize the final results of each method by running the **"generating_results_tables.ipynb"** file section by section using **Jupyter Notebook**.
 
 Enjoy exploring the results!
+
+**Author:** [Hossein Rezaei](https://github.com/HosseinRezaei951)
