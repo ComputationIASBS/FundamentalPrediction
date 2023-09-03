@@ -11,8 +11,6 @@ To execute the code for each method, follow these steps:
 
    This will create a directory named "Results" where the program's output will be organized in each step.
 
-After completing the execution of "main.py" for each method, you can visualize the final results of each method by running the "generating_results_tables.ipynb" file section by section using **Jupyter Notebook**.
+After completing the execution of "main.py" for each method, you can visualize the final results of each method by running the **"generating_results_tables.ipynb"** file section by section using **Jupyter Notebook**.
 
 Enjoy exploring the results!
-
-*Note: You can use Markdown formatting to make your README.md file visually appealing on GitHub.*
