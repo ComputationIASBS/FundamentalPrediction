@@ -9,7 +9,7 @@ To execute the code for each method, follow these steps:
 
 2. **Execute "main.py":** Run the "main.py" file within that folder.
 
-   This will create a directory named "Results," where the program's output will be organized in each step.
+   This will create a directory named "Results" where the program's output will be organized in each step.
 
 After completing the execution of "main.py" for each method, you can visualize the final results of each method by running the "generating_results_tables.ipynb" file section by section using **Jupyter Notebook**.
 
