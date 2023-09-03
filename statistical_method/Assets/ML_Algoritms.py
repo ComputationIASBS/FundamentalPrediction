@@ -55,7 +55,7 @@ class  ML_Algoritms:
             self.models = {alName: {} for alName in self.alNames}
 
             self.max_auc_roc = {alName: 0 for alName in self.alNames}
-            self.max_auprc = {alName: 0 for alName in self.alNames}
+            self.max_aupr = {alName: 0 for alName in self.alNames}
             
             result_path = f'{self.oPath}/{file_name}/{target_column}/{random_state}_{preprocessing_method}'
             self.create_outPutFolder(result_path)
@@ -140,11 +140,11 @@ class  ML_Algoritms:
 
                     
                     if (
-                        self.results[alName][self.i_feature]['auprc_mean'] > self.max_auprc[alName] or
+                        self.results[alName][self.i_feature]['aupr_mean'] > self.max_aupr[alName] or
                         self.results[alName][self.i_feature]['auc_roc_mean'] > self.max_auc_roc[alName]
                     ):
                         self.plot_algorithmResults(alName, all_y_test, all_y_pred, result_path)
-                        self.max_auprc[alName] = self.results[alName][self.i_feature]['auprc_mean']
+                        self.max_aupr[alName] = self.results[alName][self.i_feature]['aupr_mean']
                         self.max_auc_roc[alName] = self.results[alName][self.i_feature]['auc_roc_mean']
                                             
                     
@@ -241,8 +241,8 @@ class  ML_Algoritms:
         ax_scores.set_xticklabels(['' if i not in tick_positions else str(i) for i in range(1, self.n_features+1)])
 
         title = score_name.replace("_", " ").title()
-        if "Auprc" in title:
-            title = title.replace("Auprc","AUPRC")
+        if "Aupr" in title:
+            title = title.replace("Aupr","AUPR")
         if "Auc Roc" in title:
             title = title.replace("Auc Roc","AUC-ROC")
 
@@ -413,8 +413,8 @@ class  ML_Algoritms:
         log_str += f'==> ROC-AUC: ' +\
         f'{results["auc_roc_mean"]}% \u00B1 {results["auc_roc_std"]} \n'
 
-        log_str += f'==> AUPRC: ' +\
-        f'{results["auprc_mean"]}% \u00B1 {results["auprc_std"]} \n'
+        log_str += f'==> AUPR: ' +\
+        f'{results["aupr_mean"]}% \u00B1 {results["aupr_std"]} \n'
         
         return log_str
 
@@ -426,7 +426,7 @@ class  ML_Algoritms:
         all_test_accuracy = []
         all_f1 = []
         all_auc_roc = []
-        all_auprc = []
+        all_aupr = []
         all_specificity = []
         all_sensitivity = []
         all_mcc = []
@@ -449,8 +449,8 @@ class  ML_Algoritms:
 
             # PR-AUC Score
             precision, recall, _ = precision_recall_curve(y_test, y_pred)
-            auprc = auc(recall, precision)
-            all_auprc.append(auprc)
+            aupr = auc(recall, precision)
+            all_aupr.append(aupr)
 
 
             # Confusion Matrix
@@ -491,8 +491,8 @@ class  ML_Algoritms:
             "auc_roc_mean": self.round_percentage(np.mean(all_auc_roc)),
             "auc_roc_std": self.round_percentage(np.std(all_auc_roc)),
             
-            "auprc_mean": self.round_percentage(np.mean(all_auprc)),
-            "auprc_std": self.round_percentage(np.std(all_auprc)),
+            "aupr_mean": self.round_percentage(np.mean(all_aupr)),
+            "aupr_std": self.round_percentage(np.std(all_aupr)),
             
             "best_param_fold_1": all_bestParams[0],
             "best_param_fold_2": all_bestParams[1],
