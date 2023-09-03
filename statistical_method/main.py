@@ -7,17 +7,20 @@ from sklearn.linear_model import LogisticRegression as LogisticRegressionClassif
 from sklearn.svm import SVC as SVMClassifier
 
 from Assets.Log import Log
+from Assets.Data_Conversion import Data_Conversion
 from Assets.Data_Labeling import Data_Labeling
 from Assets.Data_Preparation import Data_Preparation
 from Assets.ML_Algoritms import ML_Algoritms
 
 activations = {
     "Log_Parameters": False,
+    "Data_Conversion": False,
     "Data_Labeling": False,
     "Data_Preparation": False,
     "ML_Algoritms": False
 }
 activations["Log_Parameters"] = True
+activations['Data_Conversion'] = True
 activations["Data_Labeling"] = True
 activations["Data_Preparation"] = True
 activations["ML_Algoritms"] = True
@@ -30,16 +33,22 @@ number_of_splits = 5
 random_state_numbers = [7, 42, 75, 101, 216]
 data_labeling_rules = "R2B2"
 preprocessing_methods = ["MinMax", "Standard"]
-unWanted_columns = [
-    'CompanyId', 'PersianYear',
-    'Return', 'Beta'
-]
+unWanted_columns = ["CompanyId",
+                    "Return", "Beta"]
 drop_columns = []
 target_columns = ['r_dicho', 'b_dicho']
 ######### Main Parameters #########
 
+######### Data_Conversion parameters #########
+dc_input_path = dataFolder_path
+dc_output_path = f'{resultFolder_path}/0_Converted_Data'
+dc_delete_column = ["PersianYear"]
+dc_groupBase_column = "CompanyId"
+dc_singelValue_columns = ["Return", "Beta"]
+######### Data_Conversion parameters #########
+
 ######### Data_Labeling Parameters #########
-dl_input_path = dataFolder_path
+dl_input_path = dc_output_path
 dl_output_path = f'{resultFolder_path}/1_Lebeled_Data'
 ######### Data_Labeling Parameters #########
 
@@ -94,10 +103,9 @@ ml_algorithms = {
 }
 ml_score_names = [
     'cross_validation_accuracy_mean',
-    'test_accuracy_mean',
-    'specificity_mean', 'sensitivity_mean', 
-    'mcc_mean', 'f1_mean', 
-    'auc_roc_mean', 'aupr_mean'
+    'test_accuracy_mean','specificity_mean', 
+    'sensitivity_mean','mcc_mean',
+    'f1_mean', 'auc_roc_mean', 'aupr_mean'
 ]
 ml_nJobs = -1
 ml_scorer = 'accuracy'
@@ -127,6 +135,13 @@ if activations["Log_Parameters"]:
     main_log(F'==> drop_columns: {drop_columns}')
     main_log(F'==> target_columns: {target_columns}')
 
+    # Statistics
+    main_log(F'==> dc_input_path: {dc_input_path}')
+    main_log(F'==> dc_output_path: {dc_output_path}')
+    main_log(F'==> dc_delete_column: {dc_delete_column}')
+    main_log(F'==> dc_groupBase_column: {dc_groupBase_column}')
+    main_log(F'==> dc_singelValue_columns: {dc_singelValue_columns}')
+
     # Data_Labeling
     main_log(F'==> dl_input_path: {dl_input_path}')
     main_log(F'==> dl_output_path: {dl_output_path}')
@@ -140,10 +155,12 @@ if activations["Log_Parameters"]:
     main_log(F'==> ml_output_path: {ml_output_path}')
     main_log(F'==> ml_algorithms: {ml_algorithms}')
     main_log(F'==> ml_score_names: {ml_score_names}')
+    main_log(F'==> ml_scorer: {ml_scorer}')
     main_log(F'==> ml_nJobs: {ml_nJobs}')
     ######### Log Parameters #########
 
-
+if activations['Data_Conversion']:
+    DC = Data_Conversion(dc_input_path, dc_output_path, main_log)
 
 if activations["Data_Labeling"]:
     DL = Data_Labeling(dl_input_path, dl_output_path, main_log)
@@ -159,7 +176,7 @@ if activations["ML_Algoritms"]:
 
 ######### Main Loop #########
 for file_name in dataFiles_names:
-    
+
     df = pd.read_csv(f'{dataFolder_path}/{file_name}.csv')
     main_log(f'\n==> \"{file_name}\" (Orginal) shape: {df.shape}')
     new_df = df.drop(drop_columns, axis=1)
@@ -169,8 +186,15 @@ for file_name in dataFiles_names:
 
     file_name = file_name+'_new'
     nRows, nColumns = new_df.shape
-    number_of_features = nColumns - len(unWanted_columns)
+    number_of_features = (nColumns - len(unWanted_columns+dc_delete_column)+2)*4
     main_log(f'==> \"{file_name}_new\" number_of_features: {number_of_features}')
+
+    # Data_Conversion
+    if activations["Data_Conversion"]:
+        DC(
+            file_name, dc_delete_column, dc_groupBase_column,
+            dc_singelValue_columns, unWanted_columns
+        )
 
     # Data_Labeling
     if activations["Data_Labeling"]:
@@ -186,20 +210,19 @@ for file_name in dataFiles_names:
             # Data_Preparation
             if activations["Data_Preparation"]:
                 DP(
-                    f'{file_name}_{data_labeling_rules}',
-                    number_of_features, target_columns, 
-                    unWanted_columns, preprocessing_method,
+                    f'{file_name}_{data_labeling_rules}', number_of_features,
+                    target_columns, unWanted_columns, preprocessing_method,
                     number_of_splits, shuffle_flag, random_state
                 )  
 
             # ML_Algoritms
             if activations["ML_Algoritms"]:
                 ML(
-                    f'{file_name}_{data_labeling_rules}',
-                    number_of_features, target_columns, 
-                    preprocessing_method, number_of_splits,
+                    f'{file_name}_{data_labeling_rules}', number_of_features,
+                    target_columns, preprocessing_method, number_of_splits,
                     shuffle_flag, random_state
-                )    
+                )
+
 ######### Main Loop #########
 
 # get the end time
