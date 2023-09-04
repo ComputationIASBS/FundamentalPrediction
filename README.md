@@ -3,7 +3,7 @@ Stock market prediction using fundamental features
 
 # Running the Code
 
-To execute the code for each method, follow these steps:
+To run the code for each approach:
 
 1. **Navigate to the Respective Folder:** Go to the directory related to the specific method you want to run.
 
