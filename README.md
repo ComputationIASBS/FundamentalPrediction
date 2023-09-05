@@ -15,4 +15,4 @@ After completing the execution of "main.py" for each method, you can visualize t
 
 Enjoy exploring the results!
 
-**Author:** [Hossein Rezaei](https://github.com/HosseinRezaei951)
+The dataset has been prepared by Kamran Abdi, and the implementation has been done by [Hossein Rezaei](https://github.com/HosseinRezaei951). 
