@@ -26,6 +26,8 @@ activations["Data_Preparation"] = True
 activations["ML_Algoritms"] = True
 
 ######### Main Parameters #########
+# Get the directory containing the currently executing script
+main_dir = os.path.dirname(os.path.abspath(__file__))
 dataFolder_path = "Data"
 resultFolder_path = "Results/No_drop"
 dataFiles_names = ["Main_Data"]
@@ -160,7 +162,7 @@ if activations["Log_Parameters"]:
     ######### Log Parameters #########
 
 if activations['Data_Conversion']:
-    DC = Data_Conversion(dc_input_path, dc_output_path, main_log)
+    DC = Data_Conversion(dc_input_path, dc_output_path, main_log, main_dir)
 
 if activations["Data_Labeling"]:
     DL = Data_Labeling(dl_input_path, dl_output_path, main_log)
@@ -176,13 +178,14 @@ if activations["ML_Algoritms"]:
 
 ######### Main Loop #########
 for file_name in dataFiles_names:
-
-    df = pd.read_csv(f'{dataFolder_path}/{file_name}.csv')
+    input_file_path = os.path.join(main_dir, dataFolder_path, f"{file_name}.csv")
+    df = pd.read_csv(input_file_path)
     main_log(f'\n==> \"{file_name}\" (Orginal) shape: {df.shape}')
     new_df = df.drop(drop_columns, axis=1)
     new_df = new_df.dropna()
     main_log(f'==> \"{file_name}_new\" (After droping drop_columns and Nan rows) shape: {new_df.shape}')
-    new_df.to_csv(f'{dataFolder_path}/{file_name}_new.csv', index=False)
+    out_file_path = os.path.join(main_dir, dataFolder_path, f'{file_name}_new.csv')
+    new_df.to_csv(out_file_path, index=False)
 
     file_name = file_name+'_new'
     nRows, nColumns = new_df.shape

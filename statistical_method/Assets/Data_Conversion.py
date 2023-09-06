@@ -2,14 +2,16 @@ import os
 import pandas as pd
 
 class Data_Conversion:
-    def __init__(self, input_path, output_path, Log):
+    def __init__(self, input_path, output_path, Log, main_dir):
         self.iPath = input_path
         self.oPath = output_path
         self.Log = Log
+        self.main_dir = main_dir
 
     def __call__(self, file_name, delete_column, groupBase_column, singelValue_columns, unWanted_columns):
         self.Log(f'\n..:: Start Data_Conversion Data for \"{file_name}\" ::..')
-        df = pd.read_csv(f'{self.iPath}/{file_name}.csv')
+        input_file_path = os.path.join(self.main_dir, self.iPath, f"{file_name}.csv")
+        df = pd.read_csv(input_file_path)
         df = df.drop(delete_column, axis=1)
 
         self.create_outPutFolder(self.oPath)
