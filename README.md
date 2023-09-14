@@ -17,6 +17,9 @@ Enjoy exploring the results!
 
 The dataset has been prepared by [Kamran Abdi](https://github.com/Rayan1392), and the implementation has been done by [Hossein Rezaei](https://github.com/HosseinRezaei951). 
 
+Rezaei, Hossein and Abdi, Kamran and Hooshmand, Mohsen and Soleymani, Fazlollah, Two Machine Learning Approaches on Fundamental Financial Features for Stock Market Prediction. 
+Available at SSRN: https://ssrn.com/abstract=4572177 or http://dx.doi.org/10.2139/ssrn.4572177
+
 # Data
 
 Within the repository's root directory, you will find a [Data](https://github.com/ComputationIASBS/FundamentalPrediction/tree/main/Data) folder housing a CSV file. Detailed descriptions for each of the columns can be found here.
