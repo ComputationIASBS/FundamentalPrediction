@@ -112,3 +112,115 @@ A Positive Net Working Capital indicates that a company has more current assets 
 A Negative Net Working Capital indicates that a company's current liabilities exceed its current assets. This may indicate a potential liquidity problem, as the company may struggle to meet its short-term obligations with its current resources.<br>
 Net Working Capital is a crucial metric for assessing a company's ability to manage its short-term financial needs and its overall financial health. It is used by investors, creditors, and financial analysts to evaluate the company's liquidity position and its capacity to withstand financial challenges. A positive Net Working Capital is generally preferred, but the optimal amount can vary depending on the industry and the company's specific circumstances.
 
+19. **Operating_assets_Ratio:**  
+
+20. **Total_asset_turnover:** The "Total Asset Turnover" ratio is a financial metric that measures a company's efficiency in utilizing its total assets to generate sales revenue. It assesses how effectively a company is using its assets to generate income from its primary operations.<br>
+The formula to calculate the Total Asset Turnover ratio is as follows:<br><br>
+Total Asset Turnover = Total Sales (or Revenue) / Average Total Assets<br><br>
+In this formula:<br>
+Total Sales (or Revenue) represents the total income generated from a company's primary business operations.<br>
+Average Total Assets represent the average total assets that the company had at its disposal during a specific period. This is often calculated as the average of the beginning and ending total asset values for the period.<br>
+The Total Asset Turnover ratio indicates how efficiently a company converts its assets into sales revenue. A higher ratio typically suggests better asset utilization, as it means the company generates more sales revenue for each dollar invested in total assets. Conversely, a lower ratio may indicate that the company is less efficient in using its assets to generate revenue.<br>
+Investors, analysts, and business managers use the Total Asset Turnover ratio to assess a company's operational efficiency and its ability to maximize sales from its asset base. It is particularly useful for comparing a company's performance to industry peers and for tracking changes in asset utilization over time. Different industries may have varying norms for this ratio due to differences in business models and asset requirements.
+
+21. **DPS:** "DPS" is an acronym that stands for "Dividends Per Share." It is a financial metric used to measure the amount of dividends a company pays to its shareholders on a per-share basis. Dividends are typically paid by companies to distribute a portion of their profits to shareholders as a reward for holding their shares.<br>
+The formula to calculate Dividends Per Share (DPS) is as follows:<br><br>
+DPS = Total Dividends Paid / Number of Outstanding Shares<br><br>
+In this formula:<br>
+Total Dividends Paid represents the total amount of dividends that the company has distributed to its shareholders over a specific period.<br>
+Number of Outstanding Shares is the total number of shares that are owned by shareholders and are eligible to receive dividends.<br>
+Dividends Per Share is expressed in the same currency as the company's dividend payments (e.g., dollars, euros, etc.) and is often reported on financial statements and in investor communications.<br>
+DPS is an important metric for investors, especially those who seek income from their investments, such as dividend-focused investors. It provides insight into the dividend payout policy of a company and allows investors to assess the dividend income they can expect to receive for each share they own. Comparing the DPS of different companies can also help investors evaluate investment opportunities and make informed decisions regarding income-oriented investments.
+
+22. **EPS_growth:** "EPS Growth" stands for "Earnings Per Share Growth," and it is a financial metric that measures the percentage increase or decrease in a company's earnings per share (EPS) over a specific period. EPS is a fundamental measure of a company's profitability and is calculated by dividing the net income (profit) attributable to common shareholders by the total number of outstanding shares.<br>
+The formula to calculate EPS Growth is as follows:<br><br>
+EPS Growth = [(Current EPS - Previous EPS) / |Previous EPS|] * 100<br><br>
+In this formula:<br>
+Current EPS represents the earnings per share for the most recent period being analyzed.<br>
+Previous EPS represents the earnings per share for the period immediately preceding the current period.<br>
+The EPS Growth percentage indicates how much a company's earnings per share have increased or decreased compared to the previous period. A positive EPS Growth percentage suggests that earnings have grown, while a negative percentage indicates a decline in earnings per share.<br>
+Investors and analysts use EPS Growth as an important indicator of a company's financial performance and growth prospects. A consistent and positive EPS Growth is often considered a positive sign, as it indicates that the company is generating more profit per share, which can lead to an increase in shareholder value. However, it's essential to consider the broader financial context and industry benchmarks when interpreting EPS Growth, as different industries and economic cycles can influence growth rates. Additionally, understanding the reasons behind the EPS growth or decline is crucial for a more comprehensive assessment of a company's financial health.
+
+23. **Liquidity_ratios:** Liquidity ratios are financial metrics that assess a company's ability to meet its short-term financial obligations and convert its assets into cash quickly. These ratios provide insights into a company's short-term financial health and its capacity to cover immediate liabilities.<br><br>
+Liquidity ratios are essential for assessing a company's ability to manage its short-term cash flow and financial stability. They are used by investors, creditors, and financial analysts to evaluate the risk associated with a company's short-term financial position. Different industries may have varying norms for these ratios, and what is considered a healthy liquidity ratio can depend on the specific circumstances of the company.<br><br>
+While high liquidity ratios indicate a strong ability to meet short-term obligations, excessively high ratios may suggest underutilized assets. Therefore, it's crucial to analyze liquidity ratios in conjunction with other financial metrics and consider industry benchmarks when evaluating a company's financial health.
+
+24. **ROA:** "ROA" stands for "Return on Assets," and it is a financial ratio that measures a company's profitability relative to its total assets. ROA is a key indicator of how efficiently a company utilizes its assets to generate profit.<br>
+The formula to calculate Return on Assets (ROA) is as follows:<br><br>
+ROA = (Net Profit / Total Assets) * 100<br><br>
+In this formula:<br>
+Net Profit represents the profit remaining after all expenses, including operating expenses, interest expenses, taxes, and other costs, have been deducted from total revenue or sales.<br>
+Total Assets represent the company's total holdings, including cash, accounts receivable, inventory, property, plant, equipment, and other assets.<br>
+ROA is expressed as a percentage and provides insight into the company's ability to generate profit from its asset base. A higher ROA indicates that the company is using its assets efficiently to generate profit, while a lower ROA suggests that the company may not be utilizing its assets as effectively.<br>
+ROA is a valuable metric for assessing a company's overall financial performance and comparing it to industry peers. It is often used by investors, analysts, and financial institutions to evaluate a company's ability to generate returns for its shareholders and to assess management's efficiency in asset management. Keep in mind that the ideal ROA can vary by industry, and it's important to consider industry norms and benchmarks when interpreting this ratio.
+
+25. **Quick_Ratio:** The "Quick Ratio," also known as the "Acid-Test Ratio," is a financial ratio that measures a company's short-term liquidity and its ability to meet its immediate financial obligations without relying on the sale of inventory. It provides a more conservative measure of liquidity compared to the Current Ratio because it excludes inventory from current assets.<br>
+The formula to calculate the Quick Ratio is as follows:<br><br>
+Quick Ratio = (Current Assets - Inventory) / Current Liabilities<br><br>
+In this formula:<br>
+- Current Assets represent assets that are expected to be converted into cash or used up within one year or one operating cycle, whichever is longer. Common current assets include cash, accounts receivable, and short-term investments.
+- Inventory represents the value of goods held by the company for the purpose of resale.
+- Current Liabilities are the company's short-term financial obligations that are due within one year or one operating cycle. These liabilities may include accounts payable, short-term debt, and other short-term obligations.<br><br>
+The Quick Ratio is expressed as a numerical ratio and provides insight into a company's ability to cover its immediate financial obligations using its most liquid assets (assets that can be quickly converted into cash). A Quick Ratio greater than 1 indicates that the company can cover its short-term liabilities without relying on the sale of inventory. It is often considered a more stringent test of liquidity than the Current Ratio.<br>
+The Quick Ratio is essential for assessing a company's ability to meet its short-term obligations during periods of financial stress or when inventory may not be easily sold. It is used by investors, creditors, and financial analysts to evaluate a company's liquidity position and its capacity to withstand financial challenges. Different industries may have varying norms for the Quick Ratio, and it's important to consider industry benchmarks when interpreting this metric.
+
+26. **Average_payment_period:** The "Average Payment Period" is a financial metric that measures the average number of days it takes for a company to pay its suppliers or vendors after purchasing goods or services from them. It is also sometimes referred to as the "Days Payable Outstanding" or "DPO."<br>
+The formula to calculate the Average Payment Period is as follows:<br><br>
+Average Payment Period = (Accounts Payable / Cost of Goods Sold) * Number of Days in the Period<br><br>
+In this formula:<br>
+- Accounts Payable represents the amount of money a company owes to its suppliers or vendors for goods or services received but not yet paid for. It is a liability on the company's balance sheet.
+- Cost of Goods Sold (COGS) represents the total cost incurred by the company to produce or purchase the goods that were sold during a specific period.
+- The Number of Days in the Period refers to the time frame for which you want to calculate the average payment period (e.g., a quarter or a year).<br><br>
+The Average Payment Period is expressed in days and provides insights into how efficiently a company manages its accounts payable. A longer average payment period suggests that the company takes more time to pay its suppliers, potentially indicating an advantageous working capital position. However, excessively long payment periods can strain supplier relationships. Conversely, a shorter average payment period may indicate a company's commitment to prompt payments but could also reflect tighter liquidity.<br>
+Companies and analysts use the Average Payment Period to assess a company's working capital management, cash flow management, and supplier relationships. It's important to compare this metric to industry norms and consider the company's specific industry and business model when interpreting the results.
+
+27. **ROE:** "ROE" stands for "Return on Equity," and it is a financial ratio that measures a company's profitability relative to its shareholders' equity. ROE is a key performance indicator that assesses how effectively a company generates profit from shareholders' investments.<br>
+The formula to calculate Return on Equity (ROE) is as follows:<br><br>
+ROE = (Net Profit / Shareholders' Equity) * 100<br><br>
+In this formula:<br>
+- Net Profit represents the profit remaining after all expenses, including operating expenses, interest expenses, taxes, and other costs, have been deducted from total revenue or sales.
+- Shareholders' Equity, also known as shareholders' funds or book value, represents the total value of the shareholders' ownership in the company. It is calculated as the difference between total assets and total liabilities and represents the residual interest in the company's assets after deducting all debts and obligations.<br><br>
+ROE is expressed as a percentage and provides insight into the company's ability to generate returns for its shareholders based on their invested capital. A higher ROE indicates that the company is effectively using shareholders' equity to generate profit, while a lower ROE suggests less efficient utilization of shareholders' capital.<br>
+ROE is a critical metric for investors, analysts, and financial institutions when evaluating a company's financial performance and profitability. It is often used for comparing a company's performance to industry peers and for assessing management's effectiveness in generating returns for shareholders. The optimal ROE can vary by industry, and it's essential to consider industry benchmarks and the company's specific circumstances when interpreting this ratio.
+
+28. **EPS:** "EPS" stands for "Earnings Per Share," and it is a fundamental financial metric used to measure a company's profitability on a per-share basis. EPS provides information on how much profit a company generates for each outstanding share of its common stock.<br>
+The formula to calculate Earnings Per Share (EPS) is as follows:<br><br>
+EPS = (Net Profit / Number of Outstanding Shares)<br><br>
+In this formula:<br>
+Net Profit represents the company's total earnings or profit after all expenses, including operating expenses, interest expenses, taxes, and other costs, have been deducted.<br>
+Number of Outstanding Shares represents the total number of shares of the company's common stock that are owned by shareholders and are eligible to receive a portion of the company's earnings.<br>
+EPS is expressed as a numerical value, often in the currency of the company's financial statements (e.g., dollars, euros). It is a critical metric for investors and analysts, as it helps assess a company's financial performance and profitability on a per-share basis.
+
+29. **Total_income_growth:** "Total Income Growth" refers to the percentage increase or decrease in a company's total income over a specific period compared to the income from a previous period. Total income includes all sources of revenue or income that a company generates from its primary operations, investments, and other activities.<br>
+The formula to calculate Total Income Growth is as follows:<br><br>
+Total Income Growth = [(Current Total Income - Previous Total Income) / |Previous Total Income|] * 100<br><br>
+In this formula:
+- Current Total Income represents the total income or revenue generated by the company during the most recent period being analyzed.
+- Previous Total Income represents the total income or revenue generated by the company during the period immediately preceding the current period.<br><br>
+Total Income Growth is expressed as a percentage and provides insights into how a company's overall income has changed over time. A positive growth percentage indicates an increase in total income, while a negative percentage indicates a decrease.<br>
+Total Income Growth is a useful metric for assessing a company's financial performance and its ability to increase its income over time. It can be particularly important for investors and analysts when evaluating a company's growth prospects and financial stability. However, it's essential to consider the reasons behind the income growth or decline and to analyze it in conjunction with other financial metrics and factors affecting the company and its industry.
+
+30. **P_to_E:** P/E stands for "Price-to-Earnings" ratio. It is a commonly used financial metric that helps investors and analysts assess the valuation of a publicly-traded company's stock. The P/E ratio is calculated by dividing the current market price per share of the company's stock by its earnings per share (EPS). The formula is as follows:<br><br>
+P/E Ratio = Current Market Price per Share / Earnings per Share (EPS)<br><br>
+In this formula:
+- Current Market Price per Share is the current trading price of one share of the company's stock in the stock market.
+- Earnings per Share (EPS) represents the company's net income (profit) divided by the total number of outstanding shares of its stock.<br><br>
+The P/E ratio is a valuable tool for investors because it provides insight into how much investors are willing to pay for each dollar of earnings generated by the company. A high P/E ratio may suggest that investors have high expectations for future earnings growth, while a low P/E ratio may indicate that the stock is relatively undervalued.<br>
+However, it's essential to consider other factors and industry comparisons when interpreting the P/E ratio, as it can vary significantly between different sectors and companies. Additionally, a high P/E ratio does not necessarily mean a stock is overvalued, and a low P/E ratio does not guarantee that a stock is a good investment.
+
+31. **ROI:** ROI stands for "Return on Investment." It is a financial metric used to evaluate the profitability or performance of an investment relative to its cost. ROI is typically expressed as a percentage and is calculated using the following formula:<br><br>
+ROI = [(Net Profit from Investment / Cost of Investment) * 100]<br><br>
+In this formula:
+- Net Profit from Investment refers to the gain or income generated from the investment, which includes any revenue, dividends, interest, or capital appreciation.
+- Cost of Investment represents the initial or total cost of acquiring the investment, including purchase price, fees, and other associated expenses.<br><br>
+ROI is a widely used metric in finance and business because it provides a clear way to assess the effectiveness of an investment. A positive ROI indicates that the investment has generated more profit than its cost, while a negative ROI suggests a loss. Investors and businesses use ROI to make decisions about allocating capital and resources to various investment opportunities, projects, or initiatives. It helps them prioritize investments that offer the highest potential for returns.
+
+32. **Capital:** Company's outstanding shares of stock multiple 1,000 Iranian Rials (IRR). In Iran financial Market, It is calculated by multiplying the total outstanding shares of stock to 1,000 IRR (Nominal price per share). 
+
+33. **P_to_B:** P/B stands for "Price-to-Book" ratio. It is a financial metric used by investors and analysts to assess the valuation of a publicly-traded company's stock relative to its book value. The P/B ratio is calculated by dividing the current market price per share of the company's stock by its book value per share. The formula is as follows:<br><br>
+P/B Ratio = Current Market Price per Share / Book Value per Share<br><br>
+In this formula:
+- Current Market Price per Share is the current trading price of one share of the company's stock in the stock market.
+- Book Value per Share represents the company's total shareholders' equity (assets minus liabilities) divided by the total number of outstanding shares of its stock.<br><br>
+The P/B ratio provides insight into how the market values a company's assets and equity. A high P/B ratio may suggest that investors are willing to pay a premium for the company's assets, possibly indicating expectations of future growth. Conversely, a low P/B ratio may indicate that the stock is undervalued relative to its book value, which could make it an attractive investment opportunity.<br><br>
+However, it's important to consider that the P/B ratio may not be the sole indicator of a company's investment attractiveness. Factors such as the company's growth prospects, industry conditions, and earnings potential should also be taken into account when making investment decisions. Additionally, P/B ratios can vary significantly among different industries and types of companies, so it's often more meaningful when used in comparison with industry peers or historical values.
